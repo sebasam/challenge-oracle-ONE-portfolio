@@ -1,0 +1,10 @@
+#container__skills {
+    height: 500px;
+    background: var(--main-section-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+#container__skills > h2 {
+    font-size: 18px;
+    font-weight: 600;
+}

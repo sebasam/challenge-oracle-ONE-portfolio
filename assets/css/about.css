@@ -1,0 +1,18 @@
+#container__about {
+    height: 230px;
+    background: var(--secondary-section-color);
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+#container__about > h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+#container__about > p {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+#container__about > img {
+    width: 100px;
+    margin-top: 1rem;
+}

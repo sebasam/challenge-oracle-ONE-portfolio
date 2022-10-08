@@ -1,5 +1,5 @@
 header {
-    height: 400px;
+    height: 350px;
     width: 100%;
     background: var(--main-section-color);
 }
@@ -12,11 +12,17 @@ nav {
     align-items: center;
     position: sticky;
 }
-span {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+span {    
     font-size: 14px;
     justify-self: center;
+}
+h1 {
+    font-weight: 600;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+}
+p {
+    margin-top: 0.5rem;
 }
 h3 {
     align-self: center;
@@ -29,6 +35,9 @@ h3 {
     grid-template-columns: 30% 70%;
     grid-template-rows: 100%;
 }
+.container__header-main {
+    padding: 0 1rem;
+}
 .logo__navbar {
     width: 30px;
     border-radius: 50px;
@@ -38,5 +47,15 @@ h3 {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-left: 1rem;
+}
+#social__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#social__main > a {
+    font-size: 15px;
+    margin-top: 1rem;
+    font-weight: 600;
+    cursor: pointer;
 }
