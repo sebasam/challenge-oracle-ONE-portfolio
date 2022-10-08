@@ -1,0 +1,13 @@
+:root {
+    --transparent-color: transparent;
+    --main-section-color: #F5F5F5;
+    --secondary-section-color: #EAF2FD;
+}
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+main {
+    height: auto;
+    width: 100%;    
+}
