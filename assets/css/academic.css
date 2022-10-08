@@ -1,0 +1,31 @@
+#container__academic {
+    height: 600px;
+    width: 100%;
+    padding: 2rem 1rem;
+    background: var(--secondary-section-color);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% repeat(3, 30%);
+}
+#container__academic > h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.container__academic-int {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% repeat(2, 15%);
+    justify-items: center;
+}
+.container__academic-img {
+    height: 80%;
+    width: 80%;
+    background:  var(--cards-color);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.container__academic-img img {
+    width: 100px;
+}
