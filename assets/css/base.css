@@ -2,6 +2,7 @@
     --transparent-color: transparent;
     --main-section-color: #F5F5F5;
     --secondary-section-color: #EAF2FD;
+    --cards-color: #FFF;
 }
 * {
     margin: 0 auto;
