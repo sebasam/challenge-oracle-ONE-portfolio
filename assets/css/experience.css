@@ -1,0 +1,57 @@
+#container__experiencie {
+    height: 700px;
+    padding: 0 1rem;
+    background: var(--main-section-color);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 4% repeat(3, 30%);
+    row-gap: 5px;
+}
+#container__experiencie h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.container__experience-int {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% repeat(3, 10%);
+    justify-items: center;
+}
+.container__experience-img {
+    height: 100%;
+    width: 80%;
+    background:  var(--cards-color);
+    display: grid;
+    justify-items: center;
+    align-items: center;    
+}
+.repository {
+    background: var(--main-section-color);
+    border: 3px solid black;
+}
+.demo {
+    background: var(--my-blue);
+    color: var(--cards-color);
+}
+button {
+    border-radius: 10px;
+}
+#jaeger {
+    background-image: url(./../img/jaeger.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#text {
+    background-image: url(./../img/text.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hanged {
+    background-image: url(./../img/hangedGame.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
