@@ -37,3 +37,11 @@
     font-weight: 600;
     justify-self: flex-start;
 }
+@media screen and (min-width: 768px) {
+    .container__skills {
+        grid-template-columns: repeat(3, 33.33%);
+    }
+    #container__skills {
+        height: 550px;
+    }
+}

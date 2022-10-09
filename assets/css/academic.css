@@ -29,3 +29,28 @@
 .container__academic-img img {
     width: 80px;
 }
+@media screen and (min-width: 768px) {
+    .container__academic-mobile {
+        display: none !important;
+    }
+    .container__academic-tablet {
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+    }
+    .container__academic-img {
+        height: 80%;
+    }
+    .container__academic-int {
+        grid-template-rows: repeat(2, 50%);
+    }
+    .container__academic-int h3 {
+        align-self: flex-start;
+    }
+    .container__academic-int span {
+        align-self: flex-start;
+    }
+    #container__academic {
+        grid-template-rows: 10% 90%;
+        height: 300px;
+    }
+}

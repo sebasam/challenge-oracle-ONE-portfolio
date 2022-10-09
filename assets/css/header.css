@@ -48,6 +48,7 @@ h3 {
     height: 120px;
     border-radius: 50%;
 }
+
 #social__main {
     width: 100%;
     display: flex;
@@ -58,4 +59,40 @@ h3 {
     margin-top: 1rem;
     font-weight: 600;
     cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+    #myEmail {
+        justify-self: flex-end;
+        margin-right: 1rem;
+    }
+    #social__main {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;        
+    }
+    #social__main a{
+        margin-left: 1rem;
+    }
+    .tablet__container h1 {
+        text-align: flex-start;
+        margin-left: 1rem;
+    }
+    .tablet__container p {
+        text-align: flex-start;
+        margin-left: 1rem;
+    }
+    .logo__navbar {
+        width: 50px;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 100%;        
+    }
+    header {
+        height: 220px;
+    }
 }
