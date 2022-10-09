@@ -15,3 +15,11 @@ main {
     height: auto;
     width: 100%;    
 }
+
+footer {
+    height: 100px;
+    background: var(--main-section-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

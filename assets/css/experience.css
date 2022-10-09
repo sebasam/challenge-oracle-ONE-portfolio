@@ -18,9 +18,18 @@
     grid-template-rows: 70% repeat(3, 10%);
     justify-items: center;
 }
+.container__experience-int h2 {
+    justify-self: flex-start;
+}
+.container__experience-int span {
+    justify-self: flex-start;
+}
+.container__experience-int .container__button {
+    justify-self: flex-start;
+}
 .container__experience-img {
     height: 100%;
-    width: 80%;
+    width: 100%;
     background:  var(--cards-color);
     display: grid;
     justify-items: center;
@@ -36,6 +45,10 @@
 }
 button {
     border-radius: 10px;
+}
+button:hover {
+    color: #2e21df;
+    transform: scale(0.8);
 }
 #jaeger {
     background-image: url(./../img/jaeger.png);
