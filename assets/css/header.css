@@ -96,3 +96,7 @@ h3 {
         height: 220px;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    
+}
