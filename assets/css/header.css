@@ -12,6 +12,9 @@ nav {
     align-items: center;
     position: sticky;
 }
+nav > span {
+    font-weight: bold;
+}
 span {    
     font-size: 14px;
     justify-self: center;
@@ -48,7 +51,12 @@ h3 {
     height: 120px;
     border-radius: 50%;
 }
-
+.items__desktop {
+    display: none;
+}
+.tablet {
+    display: none;
+}
 #social__main {
     width: 100%;
     display: flex;
@@ -98,5 +106,34 @@ h3 {
 }
 
 @media screen and (min-width: 1024px) {
-    
+    nav {
+        grid-template-columns: 35% 40% 25%;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    header {
+        height: 300px;
+    }
+    .tablet {
+        grid-template-columns: 70% 30%;
+        align-items: center;
+    }
+    .tablet__container h1 {
+        text-align: center;
+    }
+    .tablet__container p {
+        text-align: center;
+    }
+    .logo__header {
+        width: 180px;
+        height: 180px;
+    }
+    .items__desktop {
+        display: flex;
+    }
+    #social__main {
+        justify-content: space-evenly;
+    }
 }

@@ -45,3 +45,12 @@
         height: 550px;
     }
 }
+@media screen and (min-width: 1024px) {
+    .container__skills {
+        grid-template-columns: repeat(8, auto);
+        grid-template-rows: 150px;
+    }
+    #container__skills {
+        height: 250px;
+    }
+}

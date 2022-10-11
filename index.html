@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./assets/css/academic.css">
     <link rel="stylesheet" href="./assets/css/experience.css">
     <link rel="stylesheet" href="./assets/css/contact.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <main>
@@ -26,7 +27,13 @@
                     <img class="logo__navbar" src="./assets/img/hunty.jpeg" alt="hunty">
                     <h3>Sebas Amaya</h3>
                 </div>
-                
+                <ul class="items__desktop">
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">Skills</a></li>
+                    <li> <a href="">Hobbies</a></li>
+                    <li> <a href="">Academic training</a></li>
+                    <li> <a href="">Projects</a></li>
+                </ul>
                 <span id="myEmail">juan.amaya@blanclabs.com</span>
             </nav>
             <div class="container__header-main mobile">
@@ -55,7 +62,7 @@
             </div>
         </header>
 
-        <section id="container__about">
+        <section id="container__about" class="about">
             <h2>About Me</h2>
             <p>I am a full stack web developer, oriented to results and teamwork. I am currently a Javascript and Java programmer, I manage frameworks such as: AngularJs, ReactJs, NodeJsm Springboot; I know relational and non-relational databases like MySQL and MongoDB.</p>
             <img src="./assets/img/sign.png" alt="sign">
@@ -146,7 +153,7 @@
             </div>
         </section>
 
-        <section id="container__academic">
+        <section id="container__academic" class="container__tablet">
             <h2>Academic Training</h2>
             <div class="container__academic-tablet">
                 <div class="container__academic-int">
@@ -186,33 +193,39 @@
                 <div class="container__experience-img" id="jaeger">
                     
                 </div>
-                <h2>Jaeger Pets</h2>
-                <span>Final Project</span>
-                <div class="container__button">
-                    <button class="repository"> <a href="https://github.com/sebasam/challenge-oracle-ONE-encriptador" target="_blank">Repositorio</a> </button>
-                    <button class="demo"> <a href="http://jaeger-pets.herokuapp.com/jaeger-pets/home" target="_blank">Ver Demo</a> </button>
+                <div class="projects">
+                    <h2>Jaeger Pets</h2>
+                    <span>Final Project</span>
+                    <div class="container__button">
+                        <button class="repository"> <a href="https://github.com/SEbastian1117/backend-production" target="_blank">Repository</a> </button>
+                        <button class="demo"> <a href="http://jaeger-pets.herokuapp.com/jaeger-pets/home" target="_blank">Demo</a> </button>
+                    </div>
                 </div>
             </div>
             <div class="container__experience-int">
                 <div class="container__experience-img" id="text">
                     
                 </div>
-                <h2>Text Encryptor</h2>
-                <span>Challenge Oracle</span>
-                <div class="container__button">
-                    <button class="repository"> <a href="https://github.com/sebasam/challenge-oracle-ONE-encriptador" target="_blank">Repositorio</a> </button>
-                    <button class="demo"> <a href="https://sebasam.github.io/challenge-oracle-ONE-encriptador/" target="_blank">Ver Demo</a> </button>
+                <div class="projects">
+                    <h2>Text Encryptor</h2>
+                    <span>Challenge Oracle</span>
+                    <div class="container__button">
+                        <button class="repository"> <a href="https://github.com/sebasam/challenge-oracle-ONE-encriptador" target="_blank">Repository</a> </button>
+                        <button class="demo"> <a href="https://sebasam.github.io/challenge-oracle-ONE-encriptador/" target="_blank">Demo</a> </button>
+                    </div>
                 </div>
             </div>
             <div class="container__experience-int">
                 <div class="container__experience-img" id="hanged">
                     
                 </div>
-                <h2>Hanged game</h2>
-                <span>Challenge Oracle</span>
-                <div class="container__button">
-                    <button class="repository"> <a href="https://github.com/sebasam/challenge-oracle-ONE-juego-ahorcado" target="_blank">Repositorio</a> </button>
-                    <button class="demo"> <a href="https://sebasam.github.io/challenge-oracle-ONE-juego-ahorcado/" target="_blank">Ver Demo</a> </button>
+                <div class="projects">
+                    <h2>Hanged game</h2>
+                    <span>Challenge Oracle</span>
+                    <div class="container__button">
+                        <button class="repository"> <a href="https://github.com/sebasam/challenge-oracle-ONE-juego-ahorcado" target="_blank">Repository</a> </button>
+                        <button class="demo"> <a href="https://sebasam.github.io/challenge-oracle-ONE-juego-ahorcado/" target="_blank">Demo</a> </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -221,12 +234,12 @@
             <h2>Contact</h2>
             <p>Do you want contact to me?</p>
             <p>Please complete the form.</p>
-            <form action="">
-                <input placeholder="Nombre" type="text">
-                <input placeholder="Email" type="email">
-                <input placeholder="Asunto" type="text">
-                <textarea placeholder="Mensaje" name="" id="" cols="42" rows="10"></textarea>
-                <button id="send">Enviar Mensaje</button>
+            <form method="post">
+                <input placeholder="Nombre" type="text" id="name">
+                <input placeholder="Email" type="email" id="email">
+                <input placeholder="Asunto" type="text" id="issue">
+                <textarea placeholder="Mensaje" name="" id="message" cols="42" rows="10"></textarea>
+                <button type="submit" id="send">Enviar Mensaje</button>
             </form>
         </section>
 
@@ -236,5 +249,6 @@
     </main>
 
     <script src="./assets/js/index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>

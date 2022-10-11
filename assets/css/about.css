@@ -16,3 +16,12 @@
     width: 100px;
     margin-top: 1rem;
 }
+
+@media screen and (min-width: 1024px) {
+    #container__about {
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: repeat(3, auto);
+        align-items: center;
+    }
+}

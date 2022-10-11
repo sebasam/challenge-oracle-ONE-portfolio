@@ -37,3 +37,13 @@
     font-weight: 600;
     justify-self: flex-start;
 }
+
+@media screen and (min-width: 1024px) {
+    .container__hobbies {
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 150px
+    }
+    #container__hobbies {
+        height: 300px;
+    }
+}

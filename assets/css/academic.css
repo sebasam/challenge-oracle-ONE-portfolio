@@ -26,6 +26,9 @@
     justify-items: center;
     align-items: center;
 }
+.container__tablet {
+    display: none !important;
+}
 .container__academic-img img {
     width: 80px;
 }
@@ -49,8 +52,11 @@
     .container__academic-int span {
         align-self: flex-start;
     }
+    .container__tablet {
+        display: grid !important;
+    }
     #container__academic {
         grid-template-rows: 10% 90%;
         height: 300px;
-    }
+    }    
 }

@@ -1,5 +1,5 @@
 #container__experiencie {
-    height: 1200px;
+    height: 2000px;
     padding: 0 1rem;
     background: var(--main-section-color);
     display: grid;
@@ -11,11 +11,12 @@
     text-align: center;
     font-size: 18px;
     font-weight: 600;
+    margin-top: 1rem;
 }
 .container__experience-int {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 70% repeat(3, 10%);
+    grid-template-rows: 70% 30%;
     justify-items: center;
 }
 .container__experience-int h2 {
@@ -67,4 +68,21 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media (min-width: 375px) and (max-width: 768px) {
+    #container__experiencie {
+        height: 700px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .container__experience-int {
+        grid-template-columns: 70% 30% ;
+        grid-template-rows: 100%;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 50px);
+        align-self: center;
+    }
 }
